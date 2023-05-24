@@ -11,5 +11,5 @@ class CharactersRepository {
     
     func getAllCharacters() async throws -> Characters {
         return try await ApiRest.getCharacters()
-    }
+    }// esto es una prueba
 }
