@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State var screen: Screens = .Characters
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        switch screen {
+        case .Characters:
+            CharactersUI(screen: $screen)
+        case .Description:
+            DescriptionUI()
         }
-        .padding()
     }
+}
+
+enum Screens {
+    case Characters, Description
 }
 
 struct ContentView_Previews: PreviewProvider {
