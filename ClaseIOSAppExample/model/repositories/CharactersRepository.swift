@@ -8,7 +8,7 @@
 import Foundation
 
 class CharactersRepository {
-    
+    //hola
     func getAllCharacters() async throws -> Characters {
         return try await ApiRest.getCharacters()
     }
