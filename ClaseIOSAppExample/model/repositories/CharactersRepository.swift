@@ -10,6 +10,7 @@ import Foundation
 class CharactersRepository {
     //hola
     func getAllCharacters() async throws -> Characters {
-        return try await ApiRest.getCharacters()
+        return try await 
+        ApiRest.getCharacters()
     }// esto es una prueba
 }
